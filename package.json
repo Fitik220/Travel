@@ -9,10 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@next/swc-win32-x64-msvc": "^16.2.6",
     "@tailwindcss/postcss": "latest",
     "framer-motion": "latest",
-    "lightningcss-win32-x64-msvc": "^1.32.0",
+    "lightningcss": "latest",
     "lucide-react": "latest",
     "next": "latest",
     "react": "latest",
