@@ -29,8 +29,7 @@ export function CompareCountries({ countries }: { countries: InsightCountry[] })
   return (
     <main className="cosmic-bg min-h-screen overflow-hidden px-5 py-10 text-[#2D2D2D] sm:px-8 lg:px-10">
       <section className="relative z-10 mx-auto max-w-7xl">
-        <Nav />
-        <div className="mt-12 grid gap-6 lg:grid-cols-[1fr_0.8fr] lg:items-end">
+        <div className="mt-32 grid gap-6 lg:grid-cols-[1fr_0.8fr] lg:items-end\">
           <div>
             <p className="inline-flex items-center gap-2 rounded-full border border-[#FF6B6B] bg-[#FF6B6B]/15 px-4 py-2 text-sm font-semibold text-[#FF6B6B]">
               <Scale className="h-4 w-4" />
@@ -94,25 +93,6 @@ export function CompareCountries({ countries }: { countries: InsightCountry[] })
         </Link>
       </section>
     </main>
-  );
-}
-
-function Nav() {
-  return (
-    <nav className="flex flex-wrap items-center justify-between gap-3">
-      <Link href="/" className="font-semibold text-[#2D2D2D]">Traveler Atlas</Link>
-      <div className="flex flex-wrap gap-2">
-        {[
-          ["/mood", "Mood"],
-          ["/resorts", "Resorts"],
-          ["/tours", "Tour Builder"],
-        ].map(([href, label]) => (
-          <Link key={href} href={href} className="rounded-full border border-[#DDD] bg-white/60 px-4 py-2 text-sm font-semibold text-[#2D2D2D] transition hover:border-[#FF6B6B]">
-            {label}
-          </Link>
-        ))}
-      </div>
-    </nav>
   );
 }
 

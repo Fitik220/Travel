@@ -47,44 +47,6 @@ export default function Home() {
             </span>
             <span className="font-semibold tracking-wide text-[#2D2D2D]">Traveler Atlas</span>
           </Link>
-          <div className="flex flex-wrap items-center gap-3">
-            <Link
-              href="/explore"
-              className="rounded-full border-2 border-[#FF6B6B] px-4 py-2 text-sm text-[#2D2D2D] transition hover:border-[#20C997] hover:text-[#20C997] bg-white/50"
-            >
-              {text.common.globe}
-            </Link>
-            <Link
-              href="/assistant"
-              className="rounded-full border-2 border-[#20C997] px-4 py-2 text-sm text-[#2D2D2D] transition hover:border-[#FFD93D] hover:text-[#FFD93D] bg-white/50"
-            >
-              {text.common.aiAssistant}
-            </Link>
-            <Link
-              href="/tours"
-              className="rounded-full border-2 border-[#A8E6CF] px-4 py-2 text-sm text-[#2D2D2D] transition hover:border-[#FF6B6B] hover:text-[#FF6B6B] bg-white/50"
-            >
-              {text.common.tourBuilder}
-            </Link>
-            <Link
-              href="/compare"
-              className="rounded-full border-2 border-[#FFD93D] px-4 py-2 text-sm text-[#2D2D2D] transition hover:border-[#FF6B6B] hover:text-[#FF6B6B] bg-white/50"
-            >
-              Compare
-            </Link>
-            <Link
-              href="/mood"
-              className="rounded-full border-2 border-[#20C997] px-4 py-2 text-sm text-[#2D2D2D] transition hover:border-[#FFD93D] hover:text-[#FFD93D] bg-white/50"
-            >
-              Mood
-            </Link>
-            <Link
-              href="/resorts"
-              className="rounded-full border-2 border-[#FF6B6B] px-4 py-2 text-sm text-[#2D2D2D] transition hover:border-[#20C997] hover:text-[#20C997] bg-white/50"
-            >
-              Resorts
-            </Link>
-          </div>
         </nav>
 
         <div className="grid items-end gap-10 py-16 lg:grid-cols-[1fr_0.82fr] lg:py-20">

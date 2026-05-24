@@ -6,6 +6,7 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { RealFeelingLayer } from "@/components/RealFeelingLayer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { DropdownNav } from "@/components/DropdownNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,9 +34,12 @@ export default function RootLayout({
         <ThemeProvider>
           <LanguageProvider>
             <RealFeelingLayer />
-            <div className="fixed right-4 top-4 z-50 flex items-center gap-2">
-              <ThemeToggle />
-              <LanguageSwitcher />
+            <div className="fixed right-4 top-4 z-50 flex flex-col items-end gap-3">
+              <div className="flex items-center gap-3">
+                <DropdownNav />
+                <ThemeToggle />
+                <LanguageSwitcher />
+              </div>
             </div>
             {children}
           </LanguageProvider>
